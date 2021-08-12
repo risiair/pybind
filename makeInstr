@@ -1,0 +1,21 @@
+cd opencv \
+mkdir build \
+cd build \
+cmake .. 
+
+### cmake flags
+-DBUILD_LIST=core,imgcodecs,python_bindings_generator,python3,matlib, imgproc
+-DBUILD_NEW_PYTHON_SUPPORT=ON 
+-DPYTHON_DEFAULT_EXECUTABLE=[PATH TO PYTHON]/python.exe
+-DBUILD_opencv_python3=ON 
+-DPYTHON_EXECUTABLE=[PATH TO PYTHON]/python.exe 
+-DPYTHON3_EXECUTABLE=[PATH TO PYTHON]/python.exe 
+-DPYTHON3_LIBRARIES=[PATH TO PYTHON]/libs/python39.lib 
+-DPYTHON_INCLUDE_DIR=[PATH TO PYTHON]/include 
+-DPYTHON3_NUMPY_INCLUDE_DIRS=[PATH TO NUMPY INCLUDE] 
+-DCMAKE_INSTALL_PREFIX=[PATH TO OPENCV]/build 
+-DOPENCV_EXTRA_MODULES_PATH=[PATH TO LIB]/modules/ [PATH TO OPENCV] 
+-DWITH_IPP=OFF 
+-DBUILD_JAVA=OFF 
+-DWITH_FFMPEG=OFF
+
